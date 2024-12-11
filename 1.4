@@ -1,0 +1,166 @@
+#Hacer un programa que sume dos números y muestre el resultado
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+suma = num1 + num2
+print("La suma es:", suma)
+Hacer un programa que sume dos números y muestre el resultado
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+suma = num1 + num2
+print("La suma es:", suma)
+en un curso de computación, que consta de 24 alumnos, deberán armar un
+# algoritmo que informe por pantalla el apellido y nombre junto a la nota de
+# examen de cada alumno.
+a = 0
+while a < 24:
+    apellido = input("Ingrese el apellido del alumno: ")
+    nombre = input("Ingrese el nombre del alumno: ")
+    nota = int(input("Ingrese la nota del examen: "))
+    print(f"{apellido} {nombre} - Nota: {nota}")
+    a += 1
+    Ingresar un valor por teclado y determinar si es menor que 10 si está comprendido
+# entre 10 y 100 o si es mayor a 100, imprimir una leyenda, repetir el proceso 10 veces.
+n = 0
+while n < 10:
+    valor = int(input("Ingrese un valor: "))
+    if valor < 10:
+        print("El valor es menor que 10")
+    elif 10 <= valor <= 100:
+        print("El valor está entre 10 y 100")
+    else:
+        print("El valor es mayor a 100")
+    n += 1
+    Ingresar un valor por teclado y determinar si es menor que 10 si está comprendido
+# entre 10 y 100 o si es mayor a 100, imprimir una leyenda, repetir el proceso 10 veces.
+n = 0
+while n < 10:
+    valor = int(input("Ingrese un valor: "))
+    if valor < 10:
+        print("El valor es menor que 10")
+    elif 10 <= valor <= 100:
+        print("El valor está entre 10 y 100")
+    else:
+        print("El valor es mayor a 100")
+    n += 1
+     Ingresar valores por teclado y acumularlos en una variable detener el proceso
+# cuando la suma supere los 78500, al final imprimir el resultado
+suma = 0
+while suma <= 78500:
+    valor = int(input("Ingrese un valor: "))
+    suma += valor
+print("La suma total es:", suma)
+Ingresar 10 valores por teclado y obtener la sumatoria de los mismos.
+# Imprimir los resultados.
+suma = 0
+x = 0
+while x < 10:
+    valor = int(input("Ingrese un valor: "))
+    suma += valor
+    x += 1
+print("La suma total es:", suma)
+Ingresar 10 valores numéricos por teclado y calcular la suma, el promedio e
+# imprimir la suma, el promedio agregando una leyenda en cada caso.
+suma = 0
+x = 0
+while x < 10:
+    valor = int(input("Ingrese un valor: "))
+    suma += valor
+    x += 1
+promedio = suma / 10
+print("La suma es:", suma)
+print("El promedio es:", promedio)
+Ingresar 100 valores por teclado y determinar cuántas veces el valor ingresado
+# es: a) Mayor a 0 y menor a 10
+# b) Esta comprendido entre 10 y 100 ambos inclusive.
+# c) Es mayor a 100
+# d) Es negativo
+# e) Es igual a 0 Imprimir los resultados.
+cont_menora10 = 0
+cont_10a100 = 0
+cont_mayorque100 = 0
+cont_negativo = 0
+cont_cero = 0
+for cont in range(100):
+    valor = int(input("Ingrese un valor: "))
+    if 0 < valor < 10:
+        cont_menora10 += 1
+    elif 10 <= valor <= 100:
+        cont_10a100 += 1
+    elif valor > 100:
+        cont_mayorque100 += 1
+    elif valor < 0:
+        cont_negativo += 1
+    else:
+        cont_cero += 1
+print("Mayor a 0 y menor a 10:", cont_menora10)
+print("Entre 10 y 100:", cont_10a100)
+print("Mayor a 100:", cont_mayorque100)
+print("Negativo:", cont_negativo)
+print("Igual a 0:", cont_cero)
+#Ingresar 10 valores numéricos y obtener el promedio de los que estén
+# comprendidos entre 5 y 2500 ambos inclusive, imprimir el resultado.
+suma = 0
+contador = 0
+for sum in range(10):
+    valor = int(input("Ingrese un valor: "))
+    if 5 <= valor <= 2500:
+        suma += valor
+        contador += 1
+if contador > 0:
+    promedio = suma / contador
+    print("El promedio es:", promedio)
+else:
+    print("No se ingresaron valores en el rango 5-2500")
+    Ingresar la nota del examen de programación y si es mayor o igual a siete imprimirque aprobó,
+# sino que debe recuperar.
+nota = int(input("Ingrese la nota del examen de programación: "))
+if nota >= 70:
+    print("Aprobó")
+else:
+    print("debe ir a complementario")
+    Calcular la nota del trimestre a partir de tres notas, luego determinar si aprobó o
+# debe recuperar e informarlo
+nota1 = int(input("Ingrese la primera nota: "))
+nota2 = int(input("Ingrese la segunda nota: "))
+nota3 = int(input("Ingrese la tercera nota: "))
+promedio = (nota1 + nota2 + nota3) / 3
+if promedio >= 70:
+    print("Aprobó")
+else:
+    print("Debe ir a repite")
+    Realizar un algoritmo para determinar el sueldo de un empleado, teniendo en
+# cuenta que si trabajo menos de 5 años la antigüedad será del 30% y si trabajo igual o
+# más de 5 años del 50%. Sueldoacobrar=sueldo+(sueldo*%)
+sueldo = int(input("Ingrese el sueldo del empleado: "))
+años_trabajo = int(input("Ingrese los años trabajados: "))
+if años_trabajo < 5:
+    antiguedad = sueldo * 0.3
+else:
+    antiguedad = sueldo * 0.5
+sueldo_total = sueldo + antiguedad
+print("El sueldo a cobrar es:", sueldo_total)
+Dados 3 números determinar el mayor e informar por pantalla el resultado
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+num3 = int(input("Ingrese el tercer número: "))
+mayor = max(num1, num2, num3)
+print("El número mayor es:", mayor)
+Hacer un programa que cuente desde uno hasta cien, imprimir el resultado
+x = 1
+while x <= 100:
+    print(x)
+    x += 1
+    Contar e imprimir los números desde uno hasta diez.
+y = 1
+while y <= 10:
+    print(y)
+    y += 1
+    Ingresar un valor por teclado y determinar si es positivo, negativo o igual a cero,
+# imprimir una leyenda en cada caso
+num = int(input("Ingrese un valor: "))
+if num > 0:
+    print("El número es positivo")
+elif num < 0:
+    print("El número es negativo")
+else:
+    print("El número es igual a cero")
