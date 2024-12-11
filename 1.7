@@ -1,0 +1,76 @@
+from chemlib import Compound
+def percentage_composition(formula):
+    """
+    Calcula la composición porcentual en masa de un compuesto.
+    """
+    compound = Compound(formula)
+    return compound.mass_percent()
+formula = "C2H5OH"  # Etanol
+percentages = percentage_composition(formula)
+print(f"Composición porcentual en masa de {formula}:")
+for element, percent in percentages.items():
+  print(f"{element}: {percent:.2f}%")
+  from chemlib import Reaction
+def stoichiometry(reactants, products):
+    """
+    Calcula los coeficientes estequiométricos para balancear una reacción química.
+    :param reactants: Diccionario con los reactivos y sus cantidades iniciales.
+    :param products: Diccionario con los productos y sus cantidades iniciales.
+    :return: Fórmula de la reacción balanceada y los coeficientes.
+    """
+    reaction = Reaction(reactants, products)
+    reaction.balance()
+    return reaction.formula, reaction.coefficients
+reactants = {"H2": 2, "O2": 1}
+products = {"H2O": 2}
+formula, coefficients = stoichiometry(reactants, products)
+print(f"Reacción balanceada: {formula}")
+print(f"Coeficientes: {coefficients}")
+Proyecto: Uso de `chemlib` en Python
+Este repositorio contiene funciones y ejemplos para trabajar con conceptos de química utilizando la librería `chemlib`.
+## Funcionalidades Principales
+1. **Compuestos Químicos**
+   - Creación de compuestos a partir de fórmulas.
+   - Cálculo de masa molar.
+  
+2. **Composición Porcentual**
+   - Determinación de composición porcentual en masa.
+3. **Estequiometría**
+   - Cálculos estequiométricos para balancear reacciones.
+  
+4. **Reacciones Químicas**
+   - Balanceo de ecuaciones químicas.
+   - Representación de reacciones químicas.
+## Organización del Proyecto
+# Pascual Fernandez Jorge Alberto
+# 4 de Diciembre del 2024
+from chemlib import Reaction
+def balance_equation(reactants, products):
+    """
+    Balancea una ecuación química a partir de los reactivos y productos dados.
+    :param reactants: Diccionario con los reactivos y sus cantidades iniciales.
+    :param products: Diccionario con los productos y sus cantidades iniciales.
+    :return: Fórmula de la ecuación balanceada.
+    """
+    reaction = Reaction(reactants, products)
+    reaction.balance()
+    return reaction.formula
+reactants = {"CH4": 1, "O2": 2}
+products = {"CO2": 1, "H2O": 2}
+balanced_equation = balance_equation(reactants, products)
+print(f"Ecuación balanceada: {balanced_equation}")
+from chemlib import Compound
+def create_compound(formula):
+    """
+    Crea un compuesto químico a partir de su fórmula.
+    """
+    return Compound(formula)
+def calculate_molar_mass(compound):
+    """
+    Calcula la masa molar de un compuesto.
+    """
+    return compound.molar_mass()
+water = create_compound("H2O")
+glucose = create_compound("C6H12O6")
+print(f"Masa molar de H2O: {calculate_molar_mass(water)} g/mol")
+print(f"Masa molar de C6H12O6: {calculate_molar_mass(glucose)} g/mol")
